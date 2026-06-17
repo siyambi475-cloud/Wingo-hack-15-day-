@@ -47,7 +47,7 @@
 
     <script>
         // ===== EXPIRY SYSTEM =====
-        const expiryDate = new Date("2026-04-08T20:11:59");
+        const expiryDate = new Date("2036-04-08T20:11:59");
         const nowCheck = new Date();
         if (nowCheck > expiryDate) {
             document.body.innerHTML = `
@@ -89,7 +89,7 @@
 
         // লগইন কী চেক ফাংশন (নতুন কী এখানে দেওয়া হয়েছে)
         function checkKey() {
-            if (document.getElementById('keyInput').value === '15day') {
+            if (document.getElementById('keyInput').value === '5day') {
                 document.getElementById('loginPage').style.display = 'none';
                 document.querySelector('h1').style.display = 'block';
                 document.querySelector('button[onclick="toggleTimerBox()"]').style.display = 'block';
